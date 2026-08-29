@@ -26,7 +26,7 @@ Simple-ALU/
 └── README.md          # This file
 ```
 
-## 🛠️ Module Specifications
+## Module Specifications
 
 ### ALU Module (`ALU.v`)
 
@@ -61,7 +61,7 @@ Simple-ALU/
 - **Word Size**: 4-bit for operands, 4-bit for output
 - **Overflow Handling**: Carry-out flag captures overflow in arithmetic operations
 
-## 🧪 Testbench (`ALU_tb.v`)
+## Testbench (`ALU_tb.v`)
 
 The testbench (`ALU_tb.v`) provides comprehensive testing of all ALU operations:
 
@@ -70,71 +70,7 @@ The testbench (`ALU_tb.v`) provides comprehensive testing of all ALU operations:
 - **Operand B**: `4'b0010` (2 in decimal)
 - **Test Cases**: All 8 operations tested sequentially
 
-### Expected Results
-
-| Operation | Inputs | Expected Output | Carryout | Notes |
-|-----------|--------|-----------------|----------|-------|
-| ADD (000) | 6 + 2 | 1000 (8) | 0 | No overflow |
-| SUB (001) | 6 - 2 | 0100 (4) | 0 | Positive result |
-| AND (010) | 0110 & 0010 | 0010 (2) | 0 | Bitwise AND |
-| OR (011) | 0110 \| 0010 | 0110 (6) | 0 | Bitwise OR |
-| XOR (100) | 0110 ^ 0010 | 0100 (4) | 0 | Bitwise XOR |
-| NOT (101) | ~0110 | 1001 (9) | 0 | Inverts all bits of A |
-| INC (110) | 6 + 1 | 0111 (7) | 0 | Increment A |
-| DEC (111) | 6 - 1 | 0101 (5) | 0 | Decrement A |
-
-### Monitoring
-The testbench uses `$monitor` to display:
-- Current simulation time
-- Input values (A and B) in both binary and decimal
-- Operation selector (ALU_sel)
-- Output value (ALU_out) in both binary and decimal
-- Carry-out flag status
-
-## 🚀 Simulation
-
-### Prerequisites
-- Verilog simulator (ModelSim, Vivado, or open-source alternatives like Icarus Verilog)
-- No external dependencies
-
-### Running the Simulation
-
-**Using Icarus Verilog:**
-```bash
-# Compile
-iverilog -o alu_sim src/ALU.v src/ALU_tb.v
-
-# Run
-vvp alu_sim
-```
-
-**Using ModelSim:**
-```bash
-vlog src/ALU.v src/ALU_tb.v
-vsim ALU_tb
-run -all
-```
-
-**Using Vivado:**
-1. Create a new Vivado project
-2. Add `src/ALU.v` as design source
-3. Add `src/ALU_tb.v` as simulation source
-4. Run simulation
-
-## 📊 Sample Output
-
-```
-Time = 0 | A = 0110 (6) | B = 0010 (2) | ALU_sel = 000 | ALU_out = 1000 (8) | Carryout = 0
-Time = 10 | A = 0110 (6) | B = 0010 (2) | ALU_sel = 001 | ALU_out = 0100 (4) | Carryout = 0
-Time = 20 | A = 0110 (6) | B = 0010 (2) | ALU_sel = 010 | ALU_out = 0010 (2) | Carryout = 0
-Time = 30 | A = 0110 (6) | B = 0010 (2) | ALU_sel = 011 | ALU_out = 0110 (6) | Carryout = 0
-Time = 40 | A = 0110 (6) | B = 0010 (2) | ALU_sel = 100 | ALU_out = 0100 (4) | Carryout = 0
-Time = 50 | A = 0110 (6) | B = 0010 (2) | ALU_sel = 101 | ALU_out = 1001 (9) | Carryout = 0
-Time = 60 | A = 0110 (6) | B = 0010 (2) | ALU_sel = 110 | ALU_out = 0111 (7) | Carryout = 0
-Time = 70 | A = 0110 (6) | B = 0010 (2) | ALU_sel = 111 | ALU_out = 0101 (5) | Carryout = 0
-```
-
-## 💡 Key Design Characteristics
+## Key Design Characteristics
 
 1. **Combinational Design**: The ALU operates combinatorially without clock dependency, making it suitable for use as a building block in larger digital systems
 
@@ -145,11 +81,6 @@ Time = 70 | A = 0110 (6) | B = 0010 (2) | ALU_sel = 111 | ALU_out = 0101 (5) | C
    - Additional operations (multiply, divide, shift, etc.)
    - Enhanced condition flags (zero flag, sign flag, overflow flag)
 
-4. **Synthesis**: The design is synthesizable and can be implemented on FPGAs (Xilinx, Altera) or ASICs
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🎓 Educational Value
 
@@ -167,8 +98,3 @@ This ALU implementation is ideal for:
 - **Processor Design**: Core component of CPU/ALU blocks
 - **HDL Simulation**: Testbench design and verification
 
----
-
-**Author**: ayush-more-11  
-**Created**: September 2025  
-**Project Status**: Educational Implementation
