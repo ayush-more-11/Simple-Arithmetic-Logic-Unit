@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Oct 15 19:18:43 2025
+# Process ID: 5720
+# Current directory: C:/Users/VIT/AM/Lab_7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11732 C:\Users\VIT\AM\Lab_7\ALU.xpr
+# Log file: C:/Users/VIT/AM/Lab_7/vivado.log
+# Journal file: C:/Users/VIT/AM/Lab_7\vivado.jou
+# Running On        :VIT-SYS-340
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :12th Gen Intel(R) Core(TM) i5-12400
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :16881 MB
+# Swap memory       :1073 MB
+# Total Virtual     :17954 MB
+# Available Virtual :7464 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/VIT/AM/Lab_7/ALU.xpr
+update_compile_order -fileset sources_1

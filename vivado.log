@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Aug 29 22:05:12 2026
+# Process ID         : 21772
+# Current directory  : D:/Ayush/projects/DSD/Lab_7
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent14536 D:\Ayush\projects\DSD\Lab_7\ALU.xpr
+# Log file           : D:/Ayush/projects/DSD/Lab_7/vivado.log
+# Journal file       : D:/Ayush/projects/DSD/Lab_7\vivado.jou
+# Running On         : LAPTOP-SQJOI1TF
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13450HX
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16873 MB
+# Swap memory        : 2013 MB
+# Total Virtual      : 18886 MB
+# Available Virtual  : 8618 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Ayush/projects/DSD/Lab_7/ALU.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/VIT/AM/Lab_7' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/Ayush/projects/DSD/Lab_7/ALU.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'ALU.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
