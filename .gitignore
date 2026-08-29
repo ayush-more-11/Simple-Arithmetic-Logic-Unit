@@ -1,0 +1,15 @@
+# Ignore everything by default
+*
+
+# Allow Verilog source files
+!*.v
+
+# Allow simulation/result images
+!*.jpg
+!*.jpeg
+!*.png
+
+# Keep documentation
+!README.md
+!LICENSE
+!.gitignore
