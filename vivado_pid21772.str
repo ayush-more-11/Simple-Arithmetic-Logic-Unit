@@ -166,3 +166,8 @@ selectCodeEditor("ALU.v", 627, 272); // ae (ALU.v)
 selectCodeEditor("ALU.v", 627, 272); // ae (ALU.v)
 // HMemoryUtils.trashcanNow. Engine heap size: 897 MB. GUI used memory: 79 MB. Current time: 8/29/26, 10:05:46 PM IST
 selectCodeEditor("ALU.v", 538, 259); // ae (ALU.v)
+// [GUI Memory]: 158 MB (+5511kb) [00:04:06]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 04m:47s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 04m:49s
