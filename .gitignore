@@ -1,15 +1,27 @@
-# Ignore everything by default
-*
+# Ignore Vivado generated/project files
+.Xil/
+ALU.cache/
+ALU.hw/
+ALU.ip_user_files/
+ALU.runs/
+ALU.sim/
+ALU.srcs/
+ALU.xpr
+vivado.jou
+vivado.log
+*.str
+*.backup.*
 
-# Allow Verilog source files
-!*.v
+# Keep the clean source/result folders
+!src/
+!src/*.v
 
-# Allow simulation/result images
-!*.jpg
-!*.jpeg
-!*.png
+!results/
+!results/*.jpg
+!results/*.jpeg
+!results/*.png
 
-# Keep documentation
+# Keep repository files
 !README.md
 !LICENSE
 !.gitignore
